@@ -1,0 +1,11 @@
+<div>
+  <h2>Create a New University</h2>
+  <form (ngSubmit)="createUniversitie()">
+    <label for="name">University Name:</label>
+    <input type="text" id="name" [(ngModel)]="universitie.nomUniv" name="name" required><br>
+    <button type="submit">Create University</button>
+  </form>
+</div>
+
+
+

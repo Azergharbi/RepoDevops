@@ -1,0 +1,26 @@
+<div>
+  <h2>Add a New Course</h2>
+  <form (ngSubmit)="addCourse()">
+    <div>
+      <label for="level">Level:</label>
+      <input type="number" id="level" [(ngModel)]="course.level" name="level" required>
+    </div>
+    <div>
+      <label for="typeCourse">Type of Course:</label>
+      <input type="text" id="typeCourse" [(ngModel)]="course.typeCourse" name="typeCourse" required>
+    </div>
+    <div>
+      <label for="support">Support:</label>
+      <input type="text" id="support" [(ngModel)]="course.support" name="support" required>
+    </div>
+    <div>
+      <label for="price">Price:</label>
+      <input type="number" id="price" [(ngModel)]="course.price" name="price" required>
+    </div>
+    <div>
+      <label for="timeSlot">Time Slot:</label>
+      <input type="number" id="timeSlot" [(ngModel)]="course.timeSlot" name="timeSlot" required>
+    </div>
+    <button type="submit">Add Course</button>
+  </form>
+</div>
