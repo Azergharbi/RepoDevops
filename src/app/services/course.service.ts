@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class CourseService {
 
-  private baseUrl = '192.168.33.10:8090/api/course'; // Update the URL as per your backend
+  private baseUrl = 'http://192.168.33.10:8090/api/course'; // Update the URL as per your backend
 
   constructor(private http: HttpClient) { }
 
